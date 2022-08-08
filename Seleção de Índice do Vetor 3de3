@@ -4,3 +4,34 @@ Desenvolva um programa que guarde em um vetor nomes de funcionários de uma empr
 Deve-se permitir que, ao indicar o índice do vetor, seja indicado qual funcionário está armazenado dentro dessa memória.
 
 ------------------------------------------------------------------
+
+
+import java.io.IOException;
+
+import java.util.ArrayList;
+
+import java.util.Scanner;
+
+public class Main {
+
+public static void main(String[] args) throws IOException {
+
+ Scanner input = new Scanner(System.in);
+
+ String[] nomes = new String[5];
+
+ for (int i = 0; i < nomes.length; i++)
+
+ {
+
+ nomes[i] = input.nextLine();
+
+ }
+
+ int pos = input.nextInt();
+
+  System.out.println(nomes[pos]);
+
+}
+
+}
